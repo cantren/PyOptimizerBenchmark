@@ -90,22 +90,3 @@ class PyOptimizerBenchmark:
         grad_x = 0.1 * y
         grad_y = 0.1 * x
         return np.array([grad_x, grad_y])
-
-# Create an instance of the PyOptimizerBenchmark class
-benchmark = PyOptimizerBenchmark()
-
-# Example usage
-print("Rosenbrock function and gradient, without constraints:")
-print(benchmark.rosenbrock(1, 1), benchmark.rosenbrock_gradient(1, 1))
-
-print("\nMishra's Bird function and gradient, with constraints:")
-print(benchmark.mishras_bird(0.5, -0.5, constrained=True), benchmark.mishras_bird_gradient(0.5, -0.5))
-
-print("\nTownsend function and gradient, with constraints:")
-print(benchmark.townsend(0.5, 0.5, constrained=True), benchmark.townsend_gradient(0.5, 0.5))
-
-print("\nGomez and Levy function and gradient, with constraints:")
-print(benchmark.gomez_levy(0.5, 0.5, constrained=True), benchmark.gomez_levy_gradient(0.5, 0.5))
-
-print("\nSimionescu function and gradient, with constraints:")
-print(benchmark.simionescu(0.5, 0.5, constrained=True), benchmark.simionescu_gradient(0.5, 0.5))
