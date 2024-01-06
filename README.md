@@ -1,6 +1,27 @@
 # PyOptimizerBenchmark
 A simple python class to evaluate and compare numeric optimizer performance.
 
+```
+# Create an instance of the PyOptimizerBenchmark class
+benchmark = PyOptimizerBenchmark()
+
+# Example usage
+print("Rosenbrock function and gradient, without constraints:")
+print(benchmark.rosenbrock(1, 1), benchmark.rosenbrock_gradient(1, 1))
+
+print("\nMishra's Bird function and gradient, with constraints:")
+print(benchmark.mishras_bird(0.5, -0.5, constrained=True), benchmark.mishras_bird_gradient(0.5, -0.5))
+
+print("\nTownsend function and gradient, with constraints:")
+print(benchmark.townsend(0.5, 0.5, constrained=True), benchmark.townsend_gradient(0.5, 0.5))
+
+print("\nGomez and Levy function and gradient, with constraints:")
+print(benchmark.gomez_levy(0.5, 0.5, constrained=True), benchmark.gomez_levy_gradient(0.5, 0.5))
+
+print("\nSimionescu function and gradient, with constraints:")
+print(benchmark.simionescu(0.5, 0.5, constrained=True), benchmark.simionescu_gradient(0.5, 0.5))
+```
+
 # PyOptimizerBenchmark Quick-Start Guides
 
 This README provides quick-start guides for using the PyOptimizerBenchmark with various optimization libraries.
