@@ -2,6 +2,8 @@
 A simple python class to evaluate and compare numeric optimizer performance.
 
 ```
+import PyOptimizerBenchmark
+
 # Create an instance of the PyOptimizerBenchmark class
 benchmark = PyOptimizerBenchmark()
 
